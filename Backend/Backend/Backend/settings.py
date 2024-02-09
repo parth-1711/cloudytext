@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
+ALLOWED_HOSTS=['cloudytext.onrender.com','localhost']
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
