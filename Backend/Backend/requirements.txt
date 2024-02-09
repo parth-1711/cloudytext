@@ -78,7 +78,6 @@ python-engineio==4.8.0
 python-socketio==5.10.0
 pytz==2023.3.post1
 PyWavelets==1.4.1
-pywin32==304
 pyzmq==23.2.1
 qiskit==0.44.2
 qiskit-terra==0.25.2.1
