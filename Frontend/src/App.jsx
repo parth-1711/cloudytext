@@ -8,6 +8,9 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import loading from "./assets/loading.gif";
 import cloudytext from "./assets/cloudytext.png";
+// import dotenv from 'dotenv'
+// dotenv.config()
+
 
 function App() {
   const [imgsrc, setImgsrc] = useState();
@@ -24,9 +27,9 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:8000/");
+      const response = await fetch(import.meta.env.VITE_SERVER_URL);
       const data = await response.json();
-      // console.log(data);
+      console.log(data);
     };
     fetchData();
   }, []);
@@ -37,6 +40,8 @@ function App() {
     anchor.download = "response.png";
     anchor.click();
   };
+
+  // console.log(import.meta.env.VITE_SERVER_URL);
   return (
     <div className="bg-slate-900 h-screen flex flex-col justify-start">
       <Navbar />

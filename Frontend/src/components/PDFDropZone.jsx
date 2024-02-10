@@ -3,6 +3,9 @@ import { useDropzone } from "react-dropzone";
 import axios from "axios";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import dotenv from 'dotenv'
+// dotenv.config()
+
 
 const PDFDropzone = (props) => {
   const notify = () => {
@@ -20,7 +23,7 @@ const PDFDropzone = (props) => {
     // }
 
     console.log(acceptedFiles[0]);
-    const response = await fetch("http://localhost:8000/upload-pdf/", {
+    const response = await fetch(import.meta.env.VITE_SERVER_URL+"upload-pdf/", {
       method: "POST",
       body: formData,
     });
