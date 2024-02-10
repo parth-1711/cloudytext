@@ -26,12 +26,12 @@ SECRET_KEY = 'django-insecure-n+591=^j35j0)errz-(=i&bih57*w+)&zlg9tbs=-ny3*(49ih
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['cloudytext.onrender.com','localhost']
 
 
 # Application definition
 
-ALLOWED_HOSTS=['cloudytext.onrender.com','localhost']
+# ALLOWED_HOSTS=['cloudytext.onrender.com','localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
